@@ -1,204 +1,83 @@
-/* Common Styles for IZee Engineering Landing Pages */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
+/* Font Family Classes */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Global Body Styles */
+body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Fraunces', serif;
-  line-height: 1.6;
-  color: #333;
+/* Container Styles */
+.container {
+  max-width: 1320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Common Header Styles */
-.header {
-  padding: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Common Background Color */
+.bg-gradient-red {
+  background: linear-gradient(102deg, #f71613 0%, #f71613 100%);
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: 700;
-  text-decoration: none;
+/* Label Colors */
+.label-color-1 {
+  color: #e5e7eb;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
+.label-color-2 {
+  color: #1e1b4b;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.label-color-3 {
+  color: #1d293d;
 }
 
-/* Common Hero Section */
-.hero-section {
-  padding: 80px 0;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
+.label-color-4 {
+  color: #314158;
 }
 
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
+.label-color-5 {
+  color: #6d7279;
 }
 
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  opacity: 0.9;
+.label-color-6 {
+  color: #f71613;
 }
 
-.cta-button {
-  padding: 15px 40px;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
+/* Background Color Classes */
+.bg-label-1 {
+  background-color: #e5e7eb;
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+.bg-label-2 {
+  background-color: #1e1b4b;
 }
 
-/* Common Features Section */
-.features-section {
-  padding: 80px 0;
-  background-color: #f8f9fa;
+.bg-label-3 {
+  background-color: #1d293d;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 50px;
+.bg-label-4 {
+  background-color: #314158;
 }
 
-.feature-card {
-  padding: 30px;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
-  height: 100%;
+.bg-label-5 {
+  background-color: #6d7279;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.feature-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.feature-card h3 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.feature-card p {
-  font-size: 16px;
-  color: #666;
-}
-
-/* Common About Section */
-.about-section {
-  padding: 80px 0;
-}
-
-.about-content h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-.about-content p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-/* Common Contact Section */
-.contact-section {
-  padding: 80px 0;
-  background-color: #f8f9fa;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-family: 'Fraunces', serif;
-  font-size: 16px;
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-/* Common Footer */
-.footer {
-  padding: 40px 0;
-  text-align: center;
-  color: white;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 36px;
-  }
-
-  .hero-content p {
-    font-size: 18px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
+.bg-label-6 {
+  background-color: #f71613;
 }
