@@ -1,0 +1,165 @@
+/* Marquee Strip Styles */
+.marquee-strip {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 30px;
+  animation: marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Banner Section Styles */
+.banner-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.banner-bg {
+  background-image: url('../../public/images/karnataka/banner-bg-image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo-izee {
+  margin-bottom: 24px;
+}
+
+.banner-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Admission Badge */
+.admission-badge {
+  border-radius: 3px;
+  border: 1px solid rgba(204, 18, 48, 0.45);
+  background: rgba(204, 18, 48, 0.18);
+}
+
+/* IBM Badge */
+.ibm-badge {
+  border-radius: 3px;
+  border: 1px solid rgba(31, 112, 193, 0.4);
+  background: rgba(31, 112, 193, 0.15);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(113deg, #f71613 0%, #f71613 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-heading {
+  color: #fff;
+  font-family: 'Playfair Display';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.izee-text {
+  background: linear-gradient(124deg, #fff 30%, #c8d8ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.key-heilight-wrapper {
+  margin-bottom: 44px;
+}
+
+.banner-key-higlight {
+  padding: 10px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* CTA Buttons */
+.btn-primary-custom {
+  background: #f71613;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background: #d61411;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 22, 19, 0.3);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary-custom:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.btn-secondary-custom {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background: #ffffff;
+  color: #1d293d;
+}
+
+/* Form Placeholder */
+.form-placeholder {
+  background: rgba(30, 27, 75, 0.9);
+  backdrop-filter: blur(10px);
+  min-height: 400px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .marquee-content span {
+    font-size: 12px;
+  }
+}
