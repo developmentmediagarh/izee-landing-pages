@@ -1,0 +1,141 @@
+/* Karnataka Specific Styles */
+
+:root {
+  --karnataka-primary: #d32f2f;
+  --karnataka-secondary: #ffc107;
+  --karnataka-accent: #ff6f00;
+  --karnataka-dark: #b71c1c;
+}
+
+/* Karnataka Header */
+.header {
+  background: linear-gradient(135deg, var(--karnataka-primary), var(--karnataka-dark));
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+}
+
+.nav-links a:hover {
+  color: var(--karnataka-secondary);
+}
+
+/* Karnataka Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #d32f2f 0%, #ff6f00 100%);
+  color: white;
+}
+
+.hero-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(255, 255, 255, 0.05) 35px,
+    rgba(255, 255, 255, 0.05) 70px
+  );
+  pointer-events: none;
+}
+
+.cta-button {
+  background-color: var(--karnataka-secondary);
+  color: #333;
+}
+
+.cta-button:hover {
+  background-color: #ffb300;
+  color: #000;
+}
+
+/* Karnataka Feature Cards */
+.feature-card {
+  border-left: 4px solid var(--karnataka-primary);
+}
+
+.feature-icon {
+  color: var(--karnataka-primary);
+}
+
+.feature-card h3 {
+  color: var(--karnataka-dark);
+}
+
+/* Karnataka About Section */
+.about-section {
+  background: linear-gradient(to right, #fff5f5, #ffffff);
+}
+
+.about-highlight {
+  color: var(--karnataka-primary);
+  font-weight: 700;
+}
+
+/* Karnataka Contact Form */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--karnataka-primary);
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+
+.submit-button {
+  background-color: var(--karnataka-primary);
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: var(--karnataka-dark);
+}
+
+/* Karnataka Footer */
+.footer {
+  background: linear-gradient(135deg, var(--karnataka-dark), var(--karnataka-primary));
+}
+
+/* Karnataka Decorative Elements */
+.karnataka-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: var(--karnataka-secondary);
+  color: #333;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stats-section {
+  background-color: var(--karnataka-primary);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.stat-item {
+  margin-bottom: 20px;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--karnataka-secondary);
+}
+
+.stat-label {
+  font-size: 18px;
+  margin-top: 10px;
+}

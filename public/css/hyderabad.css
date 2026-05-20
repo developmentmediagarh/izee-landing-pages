@@ -1,0 +1,158 @@
+/* Hyderabad Specific Styles */
+
+:root {
+  --hyderabad-primary: #1976d2;
+  --hyderabad-secondary: #00bcd4;
+  --hyderabad-accent: #4caf50;
+  --hyderabad-dark: #0d47a1;
+}
+
+/* Hyderabad Header */
+.header {
+  background: linear-gradient(135deg, var(--hyderabad-primary), var(--hyderabad-dark));
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+}
+
+.nav-links a:hover {
+  color: var(--hyderabad-secondary);
+}
+
+/* Hyderabad Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #1976d2 0%, #00bcd4 100%);
+  color: white;
+}
+
+.hero-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.cta-button {
+  background-color: var(--hyderabad-accent);
+  color: white;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* Hyderabad Feature Cards */
+.feature-card {
+  border-top: 4px solid var(--hyderabad-primary);
+  border-radius: 15px 15px 0 0;
+}
+
+.feature-icon {
+  color: var(--hyderabad-secondary);
+}
+
+.feature-card h3 {
+  color: var(--hyderabad-dark);
+}
+
+/* Hyderabad About Section */
+.about-section {
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.about-highlight {
+  color: var(--hyderabad-primary);
+  font-weight: 700;
+}
+
+/* Hyderabad Contact Form */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--hyderabad-primary);
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+.submit-button {
+  background-color: var(--hyderabad-primary);
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: var(--hyderabad-dark);
+}
+
+/* Hyderabad Footer */
+.footer {
+  background: linear-gradient(135deg, var(--hyderabad-dark), var(--hyderabad-primary));
+}
+
+/* Hyderabad Decorative Elements */
+.hyderabad-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: var(--hyderabad-secondary);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stats-section {
+  background: linear-gradient(135deg, var(--hyderabad-primary), var(--hyderabad-secondary));
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.stat-item {
+  margin-bottom: 20px;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.stat-label {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Hyderabad Wave Effect */
+.wave-divider {
+  position: relative;
+  height: 80px;
+  background: var(--hyderabad-primary);
+}
+
+.wave-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23ffffff'/%3E%3C/svg%3E")
+    no-repeat;
+  background-size: cover;
+}
